@@ -1,0 +1,9 @@
+{
+  "name": "licitacoes",
+  "version": "1.0.0",
+  "description": "Licitações de serviços terceirizados com mão de obra: do edital à planilha de custos conferida, riscos operacionais, prova real de margem por posto e proposta de preços.",
+  "author": { "name": "David Montanha", "url": "https://ryuks-py.github.io" },
+  "homepage": "https://github.com/Ryuks-py/claude-skills",
+  "license": "MIT",
+  "keywords": ["licitação", "pregão", "planilha de custos", "terceirização", "IN 05/2017", "proposta"]
+}

@@ -1,0 +1,20 @@
+name: release
+# Em cada release, empacota cada skill num .zip para quem usa o Claude no app ou no site.
+on:
+  release:
+    types: [published]
+permissions:
+  contents: write
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          for d in plugins/*/skills/*/; do
+            n=$(basename "$d"); (cd "$(dirname "$d")" && zip -qr "$GITHUB_WORKSPACE/$n.zip" "$n" -x '*/__pycache__/*')
+          done
+          ls -la *.zip
+      - run: gh release upload "${{ github.event.release.tag_name }}" *.zip --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}

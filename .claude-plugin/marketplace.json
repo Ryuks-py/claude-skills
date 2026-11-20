@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "david-montanha",
+  "description": "Skills de David Montanha para o Claude: processos reais de quem constrói sistemas para empresas brasileiras.",
+  "owner": {
+    "name": "David Montanha",
+    "url": "https://ryuks-py.github.io"
+  },
+  "plugins": [
+    {
+      "name": "licitacoes",
+      "description": "Licitações de serviços terceirizados com mão de obra: do edital à planilha de custos conferida, riscos operacionais, prova real de margem por posto e proposta de preços.",
+      "author": { "name": "David Montanha" },
+      "source": "./plugins/licitacoes",
+      "category": "productivity",
+      "homepage": "https://github.com/Ryuks-py/claude-skills/tree/main/plugins/licitacoes"
+    }
+  ]
+}

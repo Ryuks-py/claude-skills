@@ -1,0 +1,60 @@
+{
+  "licitacao": "PREF. EXEMPLO/RS · PE 012/2026",
+  "parametros": {
+    "encargos_patronais": 0.0,
+    "provisao_rescisao": 0.04,
+    "tributos_faturamento": 0.06,
+    "iss": 0.03
+  },
+  "fontes_parametros": {
+    "encargos_patronais": "EMPRESA.md: Simples Nacional, anexo IV (INSS patronal à parte; ajuste ao seu caso)",
+    "provisao_rescisao": "EMPRESA.md: provisão usada pela empresa",
+    "tributos_faturamento": "EMPRESA.md: alíquota efetiva do regime",
+    "iss": "Edital, item 9.3: ISS do município 3%"
+  },
+  "postos": [
+    {
+      "cargo": "Servente de limpeza 44h",
+      "qtd": 6,
+      "salario": 1680.0,
+      "adicional": "=1518*0.2",
+      "va": "=30*22*(1-0.1)",
+      "vt": "=(4*22*2)-(1680*0.06)",
+      "outros": 90.00,
+      "valor_posto": 4380.0,
+      "fontes": {
+        "salario": "CCT XX000000/2026, cláusula X (tabela por função, 220h)",
+        "adicional": "TR item 4.2: insalubridade grau médio, 20% do salário mínimo (exemplo: confira o valor vigente)",
+        "va": "CCT cláusula Y: R$ 30,00/dia, desconto 10%; 22 dias (edital, Anexo II)",
+        "vt": "Tarifa R$ 4,00 (edital); 22 dias; desconto 6%",
+        "outros": "Benefícios fixos da CCT: R$ 30,00 + R$ 60,00 (cláusulas Z e W)",
+        "valor_posto": "Valor de referência do edital (BDI da planilha oficial veio zerado)",
+        "qtd": "TR item 3.1"
+      }
+    },
+    {
+      "cargo": "Porteiro 12x36 diurno",
+      "qtd": 2,
+      "salario": 1850.0,
+      "adicional": 0,
+      "va": "=30*15*(1-0.1)",
+      "vt": "=(4*15*2)-(1850*0.06)",
+      "outros": 90.00,
+      "valor_posto": 7980.0,
+      "estimados": [
+        "valor_posto"
+      ],
+      "fontes": {
+        "salario": "CCT cláusula X, porteiro",
+        "valor_posto": "Planilha oficial, aba Porteiro: conferir após resposta ao esclarecimento nº 2",
+        "func_por_posto": "TR item 3.4: escala 12x36, 2 funcionários se revezando por posto"
+      },
+      "func_por_posto": 2
+    }
+  ],
+  "observacoes": [
+    "Sessão: 10/03/2026 às 09h30 (retificação nº 1).",
+    "ATENÇÃO: esclarecimento nº 2 questiona o VA da planilha oficial, abaixo do piso da CCT.",
+    "Uniformes e EPIs ainda sem valor unitário: preencher na PC - AJUSTADA, aba Insumos."
+  ]
+}
